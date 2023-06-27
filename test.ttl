@@ -1,0 +1,46 @@
+@prefix ct: <https://standards.iso.org/21597/-1/ed-1/en/Container#> .
+@prefix ex: <https://example.org/> .
+@prefix ls: <https://standards.iso.org/21597/-1/ed-1/en/Linkset#> .
+
+ex:546c8df7af8b8c9bb5cfbef945ef7d8e a ls:Link ;
+    ls:hasLinkElement ex:ced414307fce70efda0baa8adfc049c1 .
+
+ex:85ac0bad0478698a2a2da24486fb2dcb a ls:Link ;
+    ls:hasLinkElement ex:76872e1422756dbc2344145c8d604364 .
+
+ex:863db35a61e3ca7465475aa6975b1574 a ls:Link ;
+    ls:hasLinkElement ex:66c8a7fc7508e5d8c4ff7f6bef47a4d6 .
+
+ex:47ad7ea45647f04568c726cbef9b81ae a ct:Document ;
+    ct:filename "TenneTmodelLDAC.ifc" ;
+    ct:filetype "IFC" .
+
+ex:5365777ade2462d1a302bde9d628bc42 a ct:Document ;
+    ct:filename "Asset_Register_LDAC.xlsx" ;
+    ct:filetype "CSV" .
+
+ex:66c8a7fc7508e5d8c4ff7f6bef47a4d6 a ls:LinkElement ;
+    ls:hasDocument ex:5365777ade2462d1a302bde9d628bc42 ;
+    ls:hasIdentifier ex:fafe1b60c24107ccd8f4562213e44849 .
+
+ex:76872e1422756dbc2344145c8d604364 a ls:LinkElement ;
+    ls:hasDocument ex:a63358c986e94ea0fba6928e3c598124 ;
+    ls:hasIdentifier ex:d1ec3fe3aa3b0ebdb37f2bf7cddf27dc .
+
+ex:9632572420f9d25191cc848d67ddbc79 a ls:Identifier ;
+    ls:identifier "EB001" .
+
+ex:a63358c986e94ea0fba6928e3c598124 a ct:Document ;
+    ct:filename "Document_Register_LDAC.xlsx" ;
+    ct:filetype "CSV" .
+
+ex:ced414307fce70efda0baa8adfc049c1 a ls:LinkElement ;
+    ls:hasDocument ex:47ad7ea45647f04568c726cbef9b81ae ;
+    ls:hasIdentifier ex:9632572420f9d25191cc848d67ddbc79 .
+
+ex:d1ec3fe3aa3b0ebdb37f2bf7cddf27dc a ls:Identifier ;
+    ls:identifier "D:01" .
+
+ex:fafe1b60c24107ccd8f4562213e44849 a ls:Identifier ;
+    ls:identifier "C:04" .
+
